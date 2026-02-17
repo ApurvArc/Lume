@@ -9,19 +9,19 @@ const Description = () => {
             initial={{ opacity: 0.2, y: 100 }}
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}   
+            viewport={{ once: true }}
         >
-            <h1 className="text-3xl sm:text-4xl font-semibold mb-2">Create AI Images</h1>
-            <p className="text-gray-500 mb-8">Turn your imagination into visuals</p>
+            <h1 className="text-3xl sm:text-4xl font-semibold mb-2">AI-Powered Image Suite</h1>
+            <p className="text-gray-500 mb-8">Everything you need for stunning visuals</p>
             <div className="flex flex-col gap-5 md:gap-14 md:flex-row items-center">
                 <img src={assets.sample_img_1} className="w-80 xl:w-96 rounded-lg" alt="" />
                 <div>
-                    <h2 className="text-3xl font-medium max-w-lg mb-4">Introducing the AI-Powered Text to Image Generator</h2>
+                    <h2 className="text-3xl font-medium max-w-lg mb-4">One platform. Multiple AI tools. Endless creativity.</h2>
                     <p className=" text-gray-600 mb-4">
-                        Easily bring your ideas to life with our free AI image generator. Whether you need stunning visuals or unique imagery, our tool transforms your text into eye-catching images with just a few clicks. Imagine it, describe it, and watch it come to life instantly.
+                        Lume brings together powerful AI tools to supercharge your creative workflow. Generate images from text descriptions, remove backgrounds with one click, upscale low-res images to crystal-clear HD, and clean up unwanted objects from photos.
                     </p>
                     <p className=" text-gray-600">
-                        Simply type in a text prompt, and our cutting-edge AI will generate high-quality images in seconds. From product visuals to character designs and portraits, even concepts that don’t yet exist can be visualized effortlessly. Powered by advanced AI technology, the creative possibilities are limitless!
+                        Whether you're a designer, content creator, or entrepreneur, Lume's AI suite handles it all. Each tool is powered by cutting-edge AI technology, delivering professional results in seconds — no design skills needed.
                     </p>
                 </div>
             </div>

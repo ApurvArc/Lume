@@ -46,18 +46,18 @@ export const assets = {
 
 export const stepsData = [
   {
-    title: 'Describe Your Vision',
-    description: 'Type a phrase, sentence, or paragraph that describes the image you want to create.',
+    title: 'Choose Your Tool',
+    description: 'Pick from our AI suite — generate images from text, remove backgrounds, upscale photos, or clean up images.',
     icon: step_icon_1,
   },
   {
-    title: 'Watch the Magic',
-    description: 'Our AI-powered engine will transform your text into a high-quality, unique image in seconds.',
+    title: 'Upload or Describe',
+    description: 'Type a prompt to generate images, or upload a photo to enhance, upscale, or remove its background.',
     icon: step_icon_2,
   },
   {
     title: 'Download & Share',
-    description: 'Instantly download your creation or share it with the world directly from our platform.',
+    description: 'Instantly download your AI-processed creation or share it with the world directly from our platform.',
     icon: step_icon_3,
   },
 ];

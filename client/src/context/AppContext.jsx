@@ -52,17 +52,64 @@ const AppContextProvider = (props) => {
         }
     }
 
+    const removeBg = async (imageFile) => {
+        try {
+            const formData = new FormData()
+            formData.append('image', imageFile)
+
+            const { data } = await axios.post(backendUrl + '/api/ai-tools/remove-bg', formData, {
+                headers: { token },
+            })
+
+            if (data.success) {
+                loadCreditsData()
+                return data.resultImage
+            } else {
+                toast.error(data.message)
+                loadCreditsData()
+                if (data.creditBalance === 0) navigate('/buy')
+            }
+        } catch (error) {
+            toast.error(error.message)
+        }
+    }
+
+    const upscaleImage = async (imageFile) => {
+        try {
+            const formData = new FormData()
+            formData.append('image', imageFile)
+            formData.append('targetWidth', 2048)
+            formData.append('targetHeight', 2048)
+
+            const { data } = await axios.post(backendUrl + '/api/ai-tools/upscale', formData, {
+                headers: { token },
+            })
+
+            if (data.success) {
+                loadCreditsData()
+                return data.resultImage
+            } else {
+                toast.error(data.message)
+                loadCreditsData()
+                if (data.creditBalance === 0) navigate('/buy')
+            }
+        } catch (error) {
+            toast.error(error.message)
+        }
+    }
+
+
     const logout = () => {
         localStorage.removeItem('token')
         setToken('')
         setUser(null)
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         if (token) {
             loadCreditsData()
         }
-    },[token])
+    }, [token])
 
     const value = {
         token, setToken,
@@ -72,6 +119,8 @@ const AppContextProvider = (props) => {
         loadCreditsData,
         backendUrl,
         generateImage,
+        removeBg,
+        upscaleImage,
         logout
     }
 

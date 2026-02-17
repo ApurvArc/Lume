@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken'; 
+import jwt from 'jsonwebtoken';
 
 // User authentication middleware
 const authUser = async (req, res, next) => {
@@ -17,9 +17,10 @@ const authUser = async (req, res, next) => {
         // Check if the decoded token contains a user ID
         if (tokenDecode.id) {
 
-            // Attach user ID to the request body
-            req.body.userId = tokenDecode.id; 
-            
+            // Attach user ID to the request body and req object
+            req.body.userId = tokenDecode.id;
+            req.userId = tokenDecode.id;
+
         } else {
             return res.json({ success: false, message: 'Not Authorized. Login Again' });
         }

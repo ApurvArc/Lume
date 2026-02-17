@@ -4,6 +4,10 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Result from './pages/Result'
 import BuyCredit from './pages/BuyCredit'
+import RemoveBg from './pages/RemoveBg'
+import Upscale from './pages/Upscale'
+import Cleanup from './pages/Cleanup'
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -27,6 +31,10 @@ const App = () => {
         <Route path='/result' element={<Result />} />
         <Route path='/buy' element={<BuyCredit />} />
         <Route path='/verify' element={<Verify />} />
+        <Route path='/remove-bg' element={<RemoveBg />} />
+        <Route path='/upscale' element={<Upscale />} />
+        <Route path='/cleanup' element={<Cleanup />} />
+
       </Routes>
       <Footer />
     </div>

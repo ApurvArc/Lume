@@ -14,7 +14,20 @@ const Navbar = () => {
 
             <Link to='/'><img className='w-28 sm:w-32 lg:w-40' src={assets.logo} alt="" /></Link>
 
-            <div>
+            <div className='flex items-center gap-2 sm:gap-5'>
+                {/* AI Tools Dropdown */}
+                <div className='relative group'>
+                    <p className='cursor-pointer text-gray-700 hover:text-blue-600 transition-colors'>AI Tools</p>
+                    <div className='absolute hidden group-hover:block top-full right-0 z-10 pt-2'>
+                        <ul className='list-none m-0 p-2 bg-white rounded-lg border shadow-lg text-sm min-w-[180px]'>
+                            <li onClick={() => navigate('/result')} className='py-2 px-4 cursor-pointer hover:bg-blue-50 rounded-md transition-colors'>🎨 Generate Image</li>
+                            <li onClick={() => navigate('/remove-bg')} className='py-2 px-4 cursor-pointer hover:bg-blue-50 rounded-md transition-colors'>🖼️ Background Remover</li>
+                            <li onClick={() => navigate('/upscale')} className='py-2 px-4 cursor-pointer hover:bg-blue-50 rounded-md transition-colors'>🔍 Image Upscaler</li>
+                            <li onClick={() => navigate('/cleanup')} className='py-2 px-4 cursor-pointer hover:bg-blue-50 rounded-md transition-colors'>🧹 Image Cleanup</li>
+                        </ul>
+                    </div>
+                </div>
+
                 {
                     user
                         ? <div className='flex items-center gap-2 sm:gap-3'>

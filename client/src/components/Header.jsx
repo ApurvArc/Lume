@@ -32,7 +32,7 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
             >
-                <p>Best text to image generator</p>
+                <p>Your complete AI image toolkit</p>
                 <img src={assets.star_icon} alt="" />
             </motion.div>
 
@@ -42,7 +42,7 @@ const Header = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 2 }}
             >
-                Turn text to <span className='text-blue-600'>image</span>, in seconds.
+                Turn ideas into <span className='text-blue-600'>stunning visuals</span>, in seconds.
             </motion.h1>
 
             <motion.p
@@ -51,7 +51,7 @@ const Header = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.8 }}
             >
-                Unleash your creativity with AI. Turn your imagination into visual art in seconds - just type, and watch the magic happen.
+                Unleash your creativity with AI. Generate images from text, remove backgrounds, upscale to HD, and clean up photos — all in one powerful platform.
             </motion.p>
 
             <motion.button
@@ -63,7 +63,7 @@ const Header = () => {
                 transition={{ default: { duration: 0.5 }, opacity: { delay: 0.8, duration: 1 } }}
                 onClick={onClickHandler}
             >
-                Generate Images <img className='h-6' src={assets.star_group} alt="" />
+                Get Started <img className='h-6' src={assets.star_group} alt="" />
             </motion.button>
 
             <motion.div

@@ -19,7 +19,7 @@ const Steps = () => {
         How it works
       </h1>
       <p className="text-lg text-gray-600 mb-8">
-        Transform Words Into Stunning Images
+        Create, enhance, and transform images with AI
       </p>
 
       <div className="space-y-4 w-full max-w-3xl text-sm" >

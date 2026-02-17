@@ -4,6 +4,7 @@ import cors from 'cors'
 import userRouter from './routes/userRoutes.js';
 import connectDB from './configs/mongodb.js';
 import imageRouter from './routes/imageRoutes.js';
+import aiToolsRouter from './routes/aiToolsRoutes.js';
 
 // App Config
 const PORT = process.env.PORT || 4000
@@ -15,9 +16,10 @@ app.use(express.json())
 app.use(cors())
 
 // API routes
-app.use('/api/user',userRouter)
-app.use('/api/image',imageRouter)
+app.use('/api/user', userRouter)
+app.use('/api/image', imageRouter)
+app.use('/api/ai-tools', aiToolsRouter)
 
-app.get('/', (req,res) => res.send("API Working"))
+app.get('/', (req, res) => res.send("API Working"))
 
 app.listen(PORT, () => console.log('Server running on port ' + PORT));
