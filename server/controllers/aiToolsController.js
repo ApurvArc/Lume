@@ -68,14 +68,14 @@ export const upscaleImage = async (req, res) => {
         }
 
         const formdata = new FormData()
-        formdata.append('image', req.file.buffer, {
+        formdata.append('image_file', req.file.buffer, {
             filename: req.file.originalname,
             contentType: req.file.mimetype,
         })
         formdata.append('target_width', targetWidth || 2048)
         formdata.append('target_height', targetHeight || 2048)
 
-        const { data } = await axios.post('https://clipdrop-api.co/image-upscaling/v1', formdata, {
+        const { data } = await axios.post('https://clipdrop-api.co/image-upscaling/v1/upscale', formdata, {
             headers: {
                 'x-api-key': process.env.CLIPDROP_API,
                 ...formdata.getHeaders(),
@@ -118,11 +118,11 @@ export const cleanupImage = async (req, res) => {
         const maskFile = req.files.mask[0]
 
         const formdata = new FormData()
-        formdata.append('image', imageFile.buffer, {
+        formdata.append('image_file', imageFile.buffer, {
             filename: imageFile.originalname,
             contentType: imageFile.mimetype,
         })
-        formdata.append('mask', maskFile.buffer, {
+        formdata.append('mask_file', maskFile.buffer, {
             filename: maskFile.originalname,
             contentType: maskFile.mimetype,
         })
