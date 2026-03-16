@@ -1,25 +1,25 @@
-# ✨ Lume — AI-Powered Image Toolkit
+# Lume — AI-Powered Image Toolkit
 
 **Lume** is a full-stack SaaS platform that brings together powerful AI image tools in one place. Generate images from text prompts, remove backgrounds, upscale low-resolution photos, and clean up unwanted objects — all powered by the [ClipDrop API](https://clipdrop.co/).
 
 ---
 
-## 🚀 Features
+## Features
 
 | Feature | Description |
 |---|---|
-| **🎨 Text-to-Image Generation** | Describe what you want and get a stunning AI-generated image in seconds |
-| **🖼️ Background Removal** | Instantly remove backgrounds from any uploaded image with AI precision |
-| **🔍 Image Upscaling** | Enhance low-resolution images up to 2048×2048 crystal-clear quality |
-| **🧹 Image Cleanup** | Erase unwanted objects from photos using image + mask input |
-| **🔐 Authentication** | Secure user registration & login with JWT and bcrypt |
-| **💳 Payment Integration** | Purchase credits via **Razorpay** or **Stripe** |
-| **⚡ Credit System** | Each AI operation costs 1 credit; new users receive 5 free credits |
-| **🎯 Smooth Animations** | Beautiful scroll-triggered animations with Framer Motion |
+| **Text-to-Image Generation** | Describe what you want and get a stunning AI-generated image in seconds |
+| **Background Removal** | Instantly remove backgrounds from any uploaded image with AI precision |
+| **Image Upscaling** | Enhance low-resolution images up to 2048×2048 crystal-clear quality |
+| **Image Cleanup** | Erase unwanted objects from photos using image + mask input |
+| **Authentication** | Secure user registration & login with JWT and bcrypt |
+| **Payment Integration** | Purchase credits via **Razorpay** or **Stripe** |
+| **Credit System** | Each AI operation costs 1 credit; new users receive 5 free credits |
+| **Smooth Animations** | Beautiful scroll-triggered animations with Framer Motion |
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌──────────────────────────┐       ┌──────────────────────────┐
@@ -35,7 +35,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18** — Component-based UI
@@ -57,7 +57,7 @@
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Lume/
@@ -114,7 +114,7 @@ Lume/
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### Prerequisites
 
@@ -185,7 +185,7 @@ The app will be running at **http://localhost:5173**.
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 ### Authentication
 
@@ -220,7 +220,7 @@ The app will be running at **http://localhost:5173**.
 
 ---
 
-## 💰 Credit Plans
+## Credit Plans
 
 | Plan | Credits | Price |
 |------|---------|-------|
@@ -232,7 +232,7 @@ New users receive **5 free credits** on signup. Each AI operation (generation, b
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 Both the client and server are configured for deployment on **[Vercel](https://vercel.com/)**:
 
@@ -243,6 +243,6 @@ Both the client and server are configured for deployment on **[Vercel](https://v
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **ISC License**.
